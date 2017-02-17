@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>로그인하세요!</p>
+    <form action="/login" method="post">
+    <p>아이디:<input name="id" type="text" placeholder="아이디"> </p>
+    <p>비밀번호:<input name="password" type="password" placeholder="8-10자, 특수문자 포함"></p>
+    <p><button type="submit">i'm ready</button></p>
+    <p>{{ error_msg }}</p>
+
+    <p><a href="{{ url_for('join') }}">회원가입하기</a></p>
+    </form>
+
+</body>
+</html>
